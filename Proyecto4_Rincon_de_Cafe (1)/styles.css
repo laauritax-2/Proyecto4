@@ -1,0 +1,44 @@
+/* Estilos sencillos para el registro de novedades */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #f4eee5;
+    color: #332820;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.pagina { width: min(760px, 92%); margin: 45px auto; }
+.encabezado {
+    padding: 34px 30px;
+    background: #6e4935;
+    color: #fff8ee;
+    border-radius: 18px 18px 5px 5px;
+}
+.etiqueta { margin: 0 0 14px; color: #e9c9a9; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 5vw, 43px); font-weight: normal; line-height: 1.15; }
+.intro { max-width: 470px; margin: 17px 0 0; color: #f0e3d7; font-size: 15px; }
+.registro { padding: 28px 30px 18px; background: #fffdf9; border-radius: 5px 5px 18px 18px; box-shadow: 0 12px 30px #4b332014; }
+.titulo-seccion { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.titulo-seccion h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: normal; }
+.contador { color: #8b7869; font-size: 12px; }
+.cambio { display: flex; gap: 20px; padding: 23px 0; border-bottom: 1px solid #eee4d9; }
+.fecha { display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; width: 58px; height: 64px; background: #f4e8da; border-radius: 10px; color: #754b35; }
+.dia { font-size: 24px; font-weight: bold; line-height: 1.1; }
+.mes { margin-top: 4px; font-size: 10px; font-weight: bold; letter-spacing: 1px; }
+.detalle { min-width: 0; }
+.categoria { display: inline-block; margin-bottom: 5px; font-size: 10px; font-weight: bold; letter-spacing: 1px; }
+.nuevo { color: #a65b31; } .mejora { color: #56734d; } .ajuste { color: #8b6b2d; }
+.detalle h3 { margin: 0 0 5px; font-size: 17px; }
+.detalle p { margin: 0; color: #76695f; font-size: 14px; }
+.pie { display: flex; align-items: center; gap: 9px; padding-top: 18px; color: #8b7869; font-size: 12px; }
+.pie p { margin: 0; }
+.punto { width: 8px; height: 8px; background: #b87a52; border-radius: 50%; }
+/* En pantallas pequeñas reducimos los espacios */
+@media (max-width: 520px) {
+    .pagina { margin: 18px auto; }
+    .encabezado, .registro { padding: 23px 19px; }
+    .titulo-seccion { align-items: flex-start; flex-direction: column; gap: 2px; }
+    .cambio { gap: 13px; }
+    .fecha { width: 49px; height: 58px; }
+    .detalle h3 { font-size: 16px; }
+}
